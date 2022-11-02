@@ -10,9 +10,11 @@ function App() {
 
   return (
     <div className={`App ${themeStyle}`} >
-      <Newsletter />
+      <div className='app__section '>
+        <button onClick={() => { dispatch() }}>Toggle Theme</button>
+        <Newsletter />
+      </div>
       <Footer />
-      <button onClick={() => { dispatch() }}>Toggle</button>
     </div>
   );
 

@@ -10,11 +10,10 @@
 #footer__options-phone:hover {
     letter-spacing: 2px;
     transition-delay: 0;
-    transition-duration: 100ms;
+    transition-duration: 50ms;
 }
 
 #footer__options-email:hover {
-    transition-delay: 100ms;
-    transition-duration: 100ms;
+    transition: none;
     border-bottom: 1px solid white;
 }

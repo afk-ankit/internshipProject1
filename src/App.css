@@ -17,8 +17,19 @@
 }
 
 .App {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-color: var(--background);
   text-align: center;
+}
+
+.app__section {
+  background-color: var(--background);
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 200;
 }
