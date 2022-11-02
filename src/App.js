@@ -1,5 +1,7 @@
 
 import './App.css';
+import Footer from './components/Footer';
+import Newsletter from './components/Newsletter';
 import { useTheme } from './Store/ThemeProvider';
 
 function App() {
@@ -8,10 +10,9 @@ function App() {
 
   return (
     <div className={`App ${themeStyle}`} >
-      <h1>HERO</h1>
-      <button onClick={() => {
-        dispatch()
-      }}>Theme Toggler</button>
+      <Newsletter />
+      <Footer />
+      <button onClick={() => { dispatch() }}>Toggle</button>
     </div>
   );
 

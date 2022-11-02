@@ -2,7 +2,7 @@ import { createContext, useContext, useReducer } from "react"
 
 const themeContext = createContext()
 
-const initialState = "light"
+const initialState = "dark"
 
 const reducer = (state) => {
     if (state == 'light') {

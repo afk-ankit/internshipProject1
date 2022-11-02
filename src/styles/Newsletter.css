@@ -1,0 +1,37 @@
+.newsLetter {
+    padding: 0 9.25rem;
+    height: 22rem;
+    border-radius: 0px 0px 35px 35px;
+    background: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.newsLetter>h2 {
+    color: var(--primary);
+    text-align: left;
+}
+
+.newsLetter__input {
+    display: flex;
+    width: 50%;
+}
+
+.newsLetter__input>input {
+    flex: 1;
+    padding: 0 1rem;
+    border: none;
+    height: 4.7rem;
+    outline: none;
+    /* width: 100%; */
+}
+
+.newsLetter__input>button {
+    padding: 0 2rem;
+    background-color: var(--button);
+    height: 4.7rem;
+    border: none;
+    color: white;
+}

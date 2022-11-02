@@ -1,11 +1,15 @@
 .dark {
-  --primary: black;
-  --background: blue
+  --primary: white;
+  --background: #161519;
+  --accent: linear-gradient(268.15deg, rgba(162, 160, 255, 0.6) 0%, rgba(162, 160, 255, 0.48) 100%);
+  --button: #383838;
 }
 
 .light {
-  --primary: pink;
-  --background: skyblue
+  --primary: black;
+  --background: white;
+  --accent: #E6E7FE;
+  --button: black
 }
 
 .App>h1 {
@@ -13,6 +17,8 @@
 }
 
 .App {
+  width: 100vw;
+  min-height: 100vh;
   background-color: var(--background);
   text-align: center;
 }
