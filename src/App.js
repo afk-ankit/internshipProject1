@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { useTheme } from './Store/ThemeProvider';
 
 function App() {
+  const [themeStyle, dispatch] = useTheme()
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${themeStyle}`} >
+      <h1>HERO</h1>
+      <button onClick={() => {
+        dispatch()
+      }}>Theme Toggler</button>
     </div>
   );
-}
 
+}
 export default App;
