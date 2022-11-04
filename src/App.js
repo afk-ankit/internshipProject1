@@ -2,6 +2,7 @@
 import './App.css';
 import Footer from './components/Footer';
 import Newsletter from './components/Newsletter';
+import ThemeSwitcher from './components/ThemeSwitcher';
 import { useTheme } from './Store/ThemeProvider';
 
 function App() {
@@ -10,8 +11,8 @@ function App() {
 
   return (
     <div className={`App ${themeStyle}`} >
+      <ThemeSwitcher />
       <div className='app__section '>
-        <button onClick={() => { dispatch() }}>Toggle Theme</button>
         <Newsletter />
       </div>
       <Footer />

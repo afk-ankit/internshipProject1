@@ -24,6 +24,7 @@
 }
 
 .app__section {
+  width: 100%;
   background-color: var(--background);
   align-items: center;
   height: 100vh;
@@ -31,5 +32,5 @@
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  z-index: 200;
+  z-index: 100;
 }

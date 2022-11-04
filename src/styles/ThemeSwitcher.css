@@ -1,0 +1,37 @@
+.ThemeSwitcher {
+    position: fixed;
+    right: -2rem;
+    top: calc(100vh - 60%);
+    transform: rotate(-90deg);
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    height: 44px;
+    width: 165px;
+    gap: 1rem;
+    border: 1.5px solid #6667AB;
+    border-radius: 32px;
+    z-index: 200;
+}
+
+.themeSwitcher__item {
+
+    font-style: italic;
+    position: relative;
+    z-index: 200;
+}
+
+.ThemeSwitcher__button {
+    left: -2px;
+    height: 44px;
+    width: 88px;
+    position: absolute;
+    background-color: #BAB8FF;
+    border-radius: 32px;
+    z-index: 10;
+}
+
+.on {
+    background-color: #6667AB;
+    transform: translateX(80px);
+}
